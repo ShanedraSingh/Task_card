@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bundle-container">
+    <div class="bundle-header">Bundle & Save</div>
+
+    <!-- Bundle Options -->
+    <div class="bundle-option">
+      <input type="radio" name="bundle" value="1" onclick="updateTotal(195, 1, 50)">
+      <div class="bundle-info">
+        <span>1 Pair</span>
+        <span>DKK 195.00</span>
+        <span class="discount">50% OFF</span>
+      </div>
+    </div>
+
+    <div class="bundle-option">
+      <input type="radio" name="bundle" value="2" onclick="updateTotal(345, 2, 40)">
+      <div class="bundle-info">
+        <span>2 Pair</span>
+        <span>DKK 345.00</span>
+        <span class="discount">40% OFF</span>
+      </div>
+    </div>
+
+    <div class="bundle-option">
+      <input type="radio" name="bundle" value="3" onclick="updateTotal(528, 3, 60)">
+      <div class="bundle-info">
+        <span>3 Pair</span>
+        <span>DKK 528.00</span>
+        <span class="discount">60% OFF</span>
+      </div>
+    </div>
+
+    <!-- Size and Color Selectors (Shown only for 3 Pair) -->
+    <div class="size-color">
+      <label>Size</label>
+      <label>Color</label>
+    </div>
+    <div id="sizeColorSelect">
+      <div class="size-color">
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Red</option>
+          <option>Blue</option>
+          <option>Green</option>
+        </select>
+      </div>
+      <div class="size-color">
+        <select>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option>Red</option>
+          <option>Blue</option>
+          <option>Green</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Total and Add to Cart Button -->
+    <div class="total" id="totalText">Total: DKK 360.00</div>
+    <button class="add-to-cart">+ Add to Cart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
